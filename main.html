@@ -2,14 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Styled Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th {
+            background-color: #27547e;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        tr:first-child th:first-child {
+            border-top-left-radius: 10px;
+        }
+        tr:first-child th:last-child {
+            border-top-right-radius: 10px;
+        }
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 10px;
+        }
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
-
-        
+    <table>
+        <tr>
+            <th>NAME</th>
+            <th>KILLS</th>
+            <th>SAVED</th>
+            <th>DEATHS</th>
+            <th>REVIVES</th>
+            <th>WIN</th>
+        </tr>
+        <tr>
+            <td>Hackerman</td>
+            <td>10</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Cool Doggo</td>
+            <td>13</td>
+            <td>4</td>
+            <td>8</td>
+            <td>7</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Andrews</td>
+            <td>19</td>
+            <td>2</td>
+            <td>10</td>
+            <td>11</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Strawberry</td>
+            <td>2</td>
+            <td>9</td>
+            <td>3</td>
+            <td>5</td>
+            <td>1</td>
+        </tr>
+    </table>
 </body>
 </html>
